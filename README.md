@@ -28,6 +28,21 @@ An AI-powered tool to generate clean, customizable business proposals using [Ope
 - Posted first updates to Twitter + LinkedIn
 - Created this README!
 
+### 📅 June 27, 2025 – Day 3
+
+### ✅ What I worked on
+- Learned how authentication works in Supabase using JWT tokens.
+- Explored how devs implement auth manually without Supabase.
+- Created a protected page component to restrict access to logged-in users.
+- Understood the use of `page.tsx` for SSR and `clientPage.tsx` for interactivity.
+
+### 🐞 What challenged me
+- Couldn't find console logs on the SSR page—realized it runs on the server!
+- Still wrapping my head around the protected page logic and server-side access.
+
+### 🛠️ What I fixed
+- Ensured only authenticated users can access the logged-in routes.
+
 ---
 
 ## 🔧 Tech Stack
