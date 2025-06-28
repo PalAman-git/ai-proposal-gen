@@ -1,17 +1,14 @@
+// app/generate/page.tsx
 import { getCurrentUser } from '@/lib/auth';
 import { redirect } from 'next/navigation';
+import CreateProposalPage from './CreateProposalClient';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-export default async function ProtectedPage({ children }: Props) {
+export default async function GeneratePage() {
   const user = await getCurrentUser();
-
   if (!user) {
-    console.log('[ProtectedPage] Not logged in — redirecting to /login');
+    console.log('[GeneratePage] Not logged in. Redirecting to login.');
     redirect('/login');
   }
 
-  return <>{children}</>;
+  return <CreateProposalPage />;
 }
