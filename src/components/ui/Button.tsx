@@ -11,10 +11,10 @@ export default function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const base = 'rounded-xl font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring';
+  const base = 'rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring';
 
   const variants: Record<string, string> = {
-    default: 'bg-[#8e8dfa] text-[#1a1a1a] hover:bg-[#a5a4fc]',
+    default: 'bg-[#e6e3e3] cursor-pointer border-none text-[#08090b] hover:bg-[#e5e5e5]',
     outline: 'border border-[#8e8dfa] text-[#8e8dfa] hover:bg-[#2a2a2a]',
     ghost: 'text-[#e5e5e5] hover:bg-[#2a2a2a]',
     accent: 'bg-[#8e8dfa] text-white hover:bg-[#a5a4fc] focus:ring-[#8e8dfa]',

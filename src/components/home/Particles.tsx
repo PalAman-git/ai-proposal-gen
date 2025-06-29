@@ -58,12 +58,12 @@ const Particles = () => {
         <primitive attach="attributes-position" object={positionAttr} />
       </bufferGeometry>
       <pointsMaterial
-        color="#8e8dfa"
+        color="#7575b5"
         size={0.18}                  // Increase particle size
         sizeAttenuation
         depthWrite={false}
         transparent
-        opacity={0.65}               // Increase visibility
+        opacity={0.7}               // Increase visibility
         alphaTest={0.01}
         map={getCircleTexture()}
         blending={THREE.AdditiveBlending} // Makes them glow softly

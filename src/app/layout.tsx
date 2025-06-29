@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import './globals.css';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import Navbar from '@/components/layout/Navbar';
@@ -57,13 +57,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className={`dark scroll-smooth ${inter.variable} bg-background` }>
       <body
-        className={`min-h-screen bg-[#1a1a1a] text-[#e5e5e5] font-sans ${inter.variable} antialiased`}
+        className={`min-h-screen text-text font-sans antialiased`}
       >
         <LenisProvider>
           <Navbar />
-          <main className="relative z-10 flex flex-col items-center justify-center px-4 sm:px-6 md:px-8">
+          <main className="relative z-10 flex flex-col items-center justify-center">{/*px-4 sm:px-6 md:px-8* */}
             {children}
           </main>
           <Footer />
