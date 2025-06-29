@@ -53,10 +53,12 @@ export default function CreateProposalPage() {
 
       log("Proposal saved successfully. Redirecting...");
       router.push("/dashboard");
-    } catch (err: any) {
-      log(`Error: ${err.message}`);
-    } finally {
-      setLoading(false);
+    } catch (err) {
+      if (err instanceof Error) {
+        log(`Error: ${err.message}`);
+      } else {
+        log("An unknown error occurred.");
+      }
     }
   };
 

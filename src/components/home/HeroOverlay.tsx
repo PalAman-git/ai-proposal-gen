@@ -10,10 +10,10 @@ export default function HeroOverlay() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const splitHeading = new SplitType(".hero-heading", {
+      new SplitType(".hero-heading", {
         types: "words,chars",
       });
-      const splitSub = new SplitType(".hero-subheading", {
+      new SplitType(".hero-subheading", {
         types: "words,chars",
       });
 

@@ -1,32 +1,32 @@
 "use client";
 
 import { useRef, useLayoutEffect } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsap";
+import { gsap } from "@/lib/gsap";
 import GlassCard from "./Cards/GlassCard";
 import "./Cards/GlassCard.css"; // Ensure this path is correct
 
-const features = [
-  {
-    title: "Instant Proposals",
-    description:
-      "Generate beautiful, client-ready proposals with one click using AI.",
-  },
-  {
-    title: "Custom Branding",
-    description:
-      "Easily customize fonts, colors, and layout to reflect your brand identity.",
-  },
-  {
-    title: "Real-time Collaboration",
-    description:
-      "Share and collaborate with your team live on proposals and edits.",
-  },
-  {
-    title: "Analytics & Insights",
-    description:
-      "Track proposal opens, engagement, and conversions in real-time.",
-  },
-];
+// const features = [
+//   {
+//     title: "Instant Proposals",
+//     description:
+//       "Generate beautiful, client-ready proposals with one click using AI.",
+//   },
+//   {
+//     title: "Custom Branding",
+//     description:
+//       "Easily customize fonts, colors, and layout to reflect your brand identity.",
+//   },
+//   {
+//     title: "Real-time Collaboration",
+//     description:
+//       "Share and collaborate with your team live on proposals and edits.",
+//   },
+//   {
+//     title: "Analytics & Insights",
+//     description:
+//       "Track proposal opens, engagement, and conversions in real-time.",
+//   },
+// ];
 
 export default function Features() {
   const sectionRef = useRef(null);

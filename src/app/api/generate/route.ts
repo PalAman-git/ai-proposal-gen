@@ -23,8 +23,9 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json({ content });
-  } catch (error: any) {
-    console.error('[API/generate] Error:', error.message);
+  } catch (error: unknown) {
+    const err = error as Error;
+    console.error('[API/generate] Error:', err.message);
 
     // Optional fallback for dev use
     const fallbackContent = `

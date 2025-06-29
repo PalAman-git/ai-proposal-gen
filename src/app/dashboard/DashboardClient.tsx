@@ -11,7 +11,7 @@ type Proposal = {
 };
 
 export default function DashboardClient({ proposals }: { proposals: Proposal[] }) {
-  const [list, setList] = useState<Proposal[]>(proposals);
+  const [list] = useState<Proposal[]>(proposals);
 
   useEffect(() => {
     console.log('[DashboardClient] 🔄 Component mounted');
